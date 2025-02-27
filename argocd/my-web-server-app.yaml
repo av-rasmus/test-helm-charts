@@ -9,6 +9,7 @@ spec:
     repoURL: https://github.com/av-rasmus/test-helm-charts.git
     targetRevision: HEAD
     path: charts/my-web-server
+    helm: {}  # This is required to indicate the source type is Helm
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -16,4 +17,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-  sourceType: Helm
