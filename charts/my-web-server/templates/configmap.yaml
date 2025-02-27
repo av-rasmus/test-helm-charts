@@ -7,3 +7,22 @@ metadata:
 data:
   VAULT_ADDR: "https://vault.example.com"
   VAULT_SECRET_PATH: "secret/my-web-server"
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+data:
+  nginx.conf: |
+    events {}
+
+    http {
+        server {
+            listen 81;
+
+            location / {
+                root /usr/share/nginx/html;
+                index index.html;
+            }
+        }
+    }

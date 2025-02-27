@@ -27,6 +27,6 @@ autoscaling:
   enabled: false
   minReplicas: 1
   maxReplicas: 10
-  targetCPUUtilizationPercentage: 
+  targetCPUUtilizationPercentage: 80
 
-containerPort: 81
+containerPort: 81  # Ensure this matches the port in deployment.yaml
