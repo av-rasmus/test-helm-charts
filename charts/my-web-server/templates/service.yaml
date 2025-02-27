@@ -8,6 +8,6 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: http
+      targetPort: {{ .Values.service.port }}
   selector:
     {{- include "my-web-server.selectorLabels" . | nindent 4 }}
