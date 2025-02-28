@@ -24,12 +24,6 @@ spec:
             - name: nginx-config
               mountPath: /etc/nginx/nginx.conf
               subPath: nginx.conf
-          # env:
-          #   - name: PASSWORD
-          #     valueFrom:
-          #       secretKeyRef:
-          #         name: {{ .Values.secretName }}
-          #         key: password
       volumes:
         - name: nginx-config
           configMap:
