@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/av-rasmus/test-helm-charts.git
-    targetRevision: HEAD
+    targetRevision: working-nginx
     path: charts/my-web-server
     helm: {}  # This is required to indicate the source type is Helm
   destination:
