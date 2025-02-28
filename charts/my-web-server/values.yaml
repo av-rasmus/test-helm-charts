@@ -31,6 +31,6 @@ autoscaling:
 
 containerPort: 81  # Ensure this matches the port in deployment.yaml
 
-secretName: staging-key
-secretPath: "kv/staging/key"
-password: ""
+# secretName: staging-key
+# secretPath: "kv/staging/key"
+# password: ""
